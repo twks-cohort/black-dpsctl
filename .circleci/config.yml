@@ -50,7 +50,7 @@ jobs:
       - setup_remote_docker
       - op/install-op:
           os: Ubuntu
-      - op/env
+      #- op/env
       - run:
           name: interpolate config.go.tpl
           command: |
@@ -73,7 +73,7 @@ jobs:
       - setup_remote_docker
       - op/install-op:
           os: Ubuntu
-      - op/env
+      #- op/env
       #- cosign/install
       #- run:
       #    name: fetch keys for signing
